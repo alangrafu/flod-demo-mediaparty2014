@@ -1,0 +1,29 @@
+{%extends "components/includes/base.html"%}
+{%block content%}
+
+<div class="container">
+<h1>Retirados</h1>
+<div class="row">
+
+		{{queries.main|BarChart(x="nombre", y="r",width=900,height=500)}}
+
+<div class="table-responsive">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Escuela</th><th>Comuna</th><th>Aprobados</th><th>Retirados</th>
+			</tr>
+		</thead>
+		<tbody>
+		{%for i in queries.main%}
+			<tr>
+				<td>{{i.nombre.value}}</td><td>{{i.nombreComuna.value}}</td><td>{{i.reprobados.value}}</td><td>{{i.retirados.value}}</td>
+			</tr>
+		{%endfor%}
+		</tbody>
+	</table>
+</div>
+</div>
+	
+</div>
+{%endblock%}

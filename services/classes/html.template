@@ -6,7 +6,7 @@
 <div class="row">
 
 {%for row in queries.classes%}
-{{row.c.value}}<br/>
+<a href='instances/{{row.c.curie}}'>{{row.c.curie}}</a><br/>
 {%endfor%}
 	
 </div>

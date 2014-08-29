@@ -1,0 +1,18 @@
+{%extends "components/includes/base.html"%}
+{%block content%}
+<h1 class="text-center">Escuelas en la comuna de {{first.nombre.nombreComuna.value}}</h1>
+<div class="container">
+	<div class="row">
+
+{{queries.escuelas|GoogleMaps(lat="lat",lon="lon",width=900,height=500)}}
+<ul>
+	{%for row in queries.escuelas%}
+	<li><a href='{{row.escuela.value}}'>{{row.nombreEscuela.value}}</a></li>
+	{%endfor%}
+</ul>
+
+		
+	</div>
+</div>
+
+{%endblock%}

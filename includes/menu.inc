@@ -12,6 +12,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/">Home</a></li>
+            <li><a href="/reprobados">Reprobados</a></li>
+            <li><a href="/retirados">Retirados</a></li>
             {%if "username" not in session %}
             <li><a href="/login">Login</a></li>
             {%else%}

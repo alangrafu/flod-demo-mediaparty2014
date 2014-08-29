@@ -1,0 +1,17 @@
+{%extends "components/includes/base.html"%}
+{%block content%}
+
+<div class="container">
+<h1>Default service</h1>
+<div class="row">
+
+				<ul class="list-group">
+				{%for row in queries.main%}
+					<li class="list-group-item"><a href='{{row.s.value}}'>{{row.s.curie}}</li>
+				{%endfor%}
+				</ul>
+
+</div>
+	
+</div>
+{%endblock%}

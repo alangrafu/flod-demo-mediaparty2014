@@ -1,0 +1,7 @@
+PREFIX mp: <http://mediaparty.info/> 
+SELECT ?escuela ?nombreEscuela ?lat ?lon WHERE{
+	?escuela mp:comuna <{{uri}}> .
+	?escuela mp:nombre ?nombreEscuela .
+	?escuela mp:latitud ?lat .
+	?escuela mp:longitud ?lon .
+}

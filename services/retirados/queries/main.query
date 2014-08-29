@@ -1,0 +1,10 @@
+PREFIX : <http://mediaparty.info/>
+
+SELECT DISTINCT ?nombre ?aprobados ?retirados (?retirados/?aprobados AS ?r) ?nombreComuna WHERE{
+  ?s a :Escuela;
+     :comuna [ :nombre ?nombreComuna ];
+     :total_aprobados ?aprobados;
+     :total_retirados ?retirados;
+     :nombre ?nombre .
+}ORDER BY DESC(?r)
+LIMIT 10

@@ -1,0 +1,10 @@
+{%extends "components/includes/base.html"%}
+{%block content%}
+<h1 class="text-center">{{first.details.nombre.value}}</h1>
+<div class="container">
+	<div class="row">
+{{queries.details|GoogleMaps(lat="lat",lon="lon",width=900,height=500,zoom=5)}}		
+	</div>
+</div>
+
+{%endblock%}

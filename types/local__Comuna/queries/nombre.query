@@ -1,0 +1,3 @@
+SELECT ?nombreComuna WHERE{
+	<{{uri}}> <http://mediaparty.info/nombre> ?nombreComuna .
+}

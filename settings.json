@@ -1,19 +1,19 @@
 {
  	"modules": [ "Static", "Users", "Services", "Types"],
  	"ns": {
- 		"local": "http://localhost:5001/",
- 		"origin": "http://poderopedia.org/"
+ 		"local": "http://localhost:54321/",
+ 		"origin": "http://mediaparty.info/"
  	},
  	"mirrored": true,
  	"endpoints": {
- 		"local": "http://localhost:3030/poderopedia/query",
+ 		"local": "http://localhost:3030/escuelas/query",
  		"dbpedia": "http://dbpedia.org/sparql"
  	},
  	"host": "0.0.0.0",
- 	"port": 5001,
+ 	"port": 54321,
  	"flod": { 
  	  "title": "FLOD"
  	},
  	"secret": "17278293712914029954",
- 	"root": "home"
+ 	"root": "comunas"
 }

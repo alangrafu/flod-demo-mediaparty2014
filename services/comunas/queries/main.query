@@ -1,0 +1,6 @@
+PREFIX mp: <http://mediaparty.info/>
+
+SELECT ?comuna ?nombreComuna WHERE{
+  ?comuna a mp:Comuna .
+  ?comuna mp:nombre ?nombreComuna .
+}ORDER BY ?nombreComuna

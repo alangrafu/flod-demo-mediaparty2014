@@ -1,0 +1,7 @@
+PREFIX mp: <http://mediaparty.info/>
+
+SELECT ?nombre ?lat ?lon WHERE{
+	<{{uri}}> mp:nombre ?nombre;
+			  mp:latitud ?lat;
+			  mp:longitud ?lon .
+}
