@@ -5,7 +5,7 @@ alvaro[@]graves.cl
 
 ## Instalación
 
-* ** NO CLONAR ESTE REPO ** FLOD lo hará por si mismo. Simplemente ejecutar `bash < <(curl -skL http://flod.info/install)` y cuando pregunte qué repositorio usar para la aplicación, ingresar la URL de este.
+* **NO CLONAR ESTE REPO DIRECTAMENTE** FLOD lo hará por si mismo. Simplemente ejecutar `bash < <(curl -skL http://flod.info/install)` y cuando pregunte qué repositorio usar para la aplicación, recién ahí ingresar la URL de este (https://github.com/alangrafu/flod-demo-mediaparty2014.git).
 
 * Seguir la instalación regular de FLOD
 
